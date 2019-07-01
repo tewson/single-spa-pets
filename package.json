@@ -1,0 +1,8 @@
+{
+  "name": "single-spa-pets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tewson/single-spa-pets.git",
+  "author": "tewson.seeoun@gmail.com",
+  "license": "MIT"
+}
