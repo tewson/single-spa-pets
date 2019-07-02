@@ -18,7 +18,12 @@ export default () => (
       </ul>
     </nav>
     <Route exact path="/" component={() => <h2>Welcome to Pets!</h2>} />
-    <Route exact path="/cat" component={() => "Cat"} />
-    <Route exact path="/dog" component={() => "Dog"} />
+    <Route
+      path="/"
+      render={({ location: { pathname } }) => {
+        const display = pathname === "/" ? "none" : "block";
+        return <div id="spa" style={{ display }} />;
+      }}
+    />
   </Router>
 );
