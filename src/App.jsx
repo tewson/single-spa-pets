@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import history from "./history";
+
 export default () => (
-  <Router>
+  <Router history={history}>
     <h1>Pets!</h1>
     <nav>
       <ul>

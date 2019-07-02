@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import * as singleSpa from "single-spa";
 import SystemJS from "systemjs";
 
+import history from "./history";
 import App from "./App";
 
 singleSpa.registerApplication(
@@ -12,6 +13,9 @@ singleSpa.registerApplication(
   },
   () => {
     return window.location.pathname.startsWith("/cat");
+  },
+  {
+    history
   }
 );
 
